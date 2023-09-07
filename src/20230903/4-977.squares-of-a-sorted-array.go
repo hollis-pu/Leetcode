@@ -26,7 +26,7 @@ func sortedSquares(nums []int) []int {
 		if nums[left]*nums[left] > nums[right]*nums[right] { // 当左边大时，取左边的值，并移动左指针
 			numResult[lenNum-i-1] = nums[left] * nums[left]
 			left++
-		} else { // 否者，移动右指针
+		} else { // 否则，移动右指针
 			numResult[lenNum-i-1] = nums[right] * nums[right] // 目标值从后往前填充
 			right--
 		}
